@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400&display=swap');
+.container{
+   width: 960px;
+   margin: 0 auto;
+   font-family: 'Radio Canada';
+}
+@media (max-width: 1170px) {
+   .container {
+      width: 920px;
+   }
+}
+
+@media (max-width: 940px) {
+   .container {
+      width: 700px;
+   }
+}
+
+@media (max-width: 710px) {
+   .container {
+      width: 500px;
+   }
+}
+
+@media (max-width: 510px) {
+   .container {
+      width: 400px;
+   }
+}
+
+@media (max-width: 410px) {
+   .container {
+      width: 300px;
+   }
+}
+h1{
+   color: #fff;
+   text-transform: uppercase;
+   font-family: 'Radio Canada', sans-serif;
+   font-weight: 400;
+   font-size: 50px;
+}
+header{
+   height: 300px;
+   background-color: darkred;
+   text-align: center;
+   padding-top: 50px;
+}
+.publication{
+   border: 1px solid black;
+   margin-top: 20px;
+   width: 100%;
+   padding-top: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.title{
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 300;
+}
+.content{
+   margin-top: 10px;
+   text-align: center;
+   font-weight: 400;
+   white-space: normal;
+}
+.date{
+   font-weight: 300;
+   text-align: end;
+   margin-right: 10px;
+}
+i{
+   padding-top: 30px;
+   color: #fff;
+   font-size: 70px;
+}
+.menu {
+   list-style: none;
+   color: #fff;
+   display: flex;
+   flex-direction: row;
+}
+a .menu__elem {
+   cursor: pointer;
+   color: #fff;
+   text-decoration: none;
+}
+a{
+   text-decoration: none;
+}
+body{
+   height: 120%;
+}
+footer {
+   width: 100%;
+   height: 200px;
+   margin: 0 auto;
+   background-color: darkred;
+}
+.read__more{
+   color: gray;
+}
+.img__cont{
+   width: 400px;
+   margin: 0 auto;
+   display: flex;
+   padding: 0 auto;
+}
+.event__img{ 
+   width: 100%;
+}
+
+.archive__elem a{
+ border-bottom: 1px solid darkred;
+ color: darkred;
+ text-transform: uppercase;
+ font-size: 20px;
+}
+.archive__elem{
+margin-bottom: 10px;
+}
+.archive__list {
+   list-style: none;
+}
+.page-numbers {
+   color: dimgray;
+}
+.current {
+   color: darkred;
+}
+.next {
+   color:darkgrey;
+}
+.comment{
+   width: 100%;
+   height: 100px;
+}
+.author {
+   font-family: 'Radio Canada';
+   font-size: 15px;
+   color: darkred;
+   text-transform: uppercase;
+}
+
+
+
+
+#respond {
+   margin: 0 auto 1.625em;
+   padding: 1.625em;
+   position: relative;
+   z-index: 2;
+   background: #f9f9f9;
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
+   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
+   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
+}
+
+#respond input[type="text"],
+#respond textarea {
+   border: 1px solid brown;
+   position: relative;
+   padding: 10px;
+   height: 100px;
+}
+
+#respond .comment-form-author,
+#respond .comment-form-email,
+#respond .comment-form-url,
+#respond .comment-form-comment {
+   position: relative;
+}
+
+#respond .comment-form-author label,
+#respond .comment-form-email label,
+#respond .comment-form-url label,
+#respond .comment-form-comment label {
+   color: black;
+   display: inline-block;
+   font-size: 12px;
+   left: 4px;
+   min-width: 60px;
+   padding: 4px 10px;
+   position: relative;
+}
+
+#respond input[type="text"]:focus,
+#respond textarea:focus {
+   text-indent: 0;
+   z-index: 1;
+}
+
+#respond textarea {
+   resize: vertical;
+   width: 95%;
+}
+
+#respond .comment-form-author .required,
+#respond .comment-form-email .required {
+   color: #bd3500;
+   font-size: 22px;
+   font-weight: bold;
+}
+
+#respond .comment-notes,
+#respond .logged-in-as {
+   font-size: 0px;
+}
+
+#respond p {
+   margin: 10px 0;
+}
+
+#respond .form-submit,
+#contactForm .sim {
+   float: right;
+   margin: -20px 0 10px;
+}
+
+#respond .form-submit input,
+#contactForm .sim {
+   margin: 20px 0;
+   padding: 5px;
+   position: relative;
+   cursor: pointer;
+   color: #fff;
+   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+   border: none;
+   background: darkred;
+
+}
+
+#respond .form-submit input:hover,
+#contactForm .sim:hover {
+   transition: 1s;
+   transform: scale(1.2);
+}
+
+
+
+.commentlist #respond {
+   margin: 1.625em 0 0;
+   width: auto;
+}
+
+#reply-title {
+   color: darkred;
+   font-size: 20px;
+   letter-spacing: -1px;
+   line-height: 15px;
+}
+
+#cancel-comment-reply-link {
+   display: block;
+   font-size: 12px;
+   font-weight: normal;
+   line-height: 2.2em;
+   letter-spacing: -1px;
+   position: absolute;
+   right: 1.625em;
+   text-decoration: none;
+   text-transform: uppercase;
+   top: 1.1em;
+}
+
+#respond label {
+   line-height: 1.5em;
+}
+
+#respond input[type=text] {
+   display: block;
+   height: 15px;
+   width: 95%;
+}
+
+#respond p {
+   font-size: 12px;
+}
+
+.likes {
+   display: flex;
+}
+
+.likes__item {
+   list-style: none;
+}
+
+.likes__item:not(:last-child) {
+   margin-right: 20px;
+}
+
+.likes__item a {
+   padding: 10px 15px;
+   display: inline-block;
+   border-bottom: 2px solid;
+   border-radius: 3px;
+   box-shadow: none;
+   background: #f5f5f5;
+   font-size: 14px;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   line-height: 100%;
+}
+
+.likes__item a:hover {
+   color: #fff;
+}
+
+.likes__item--like a {
+   border-bottom-color: #47ba72;
+   color: #47ba72;
+}
+
+.likes__item--dislike a {
+   border-bottom-color: #ba6547;
+   color: #ba6547;
+}
+
+.likes__item--like a:hover {
+   background: #47ba72;
+}
+
+.likes__item--dislike a:hover {
+   background: #ba6547;
+}
+.sidebar {
+   position: absolute;
+   width: 20%;
+}
