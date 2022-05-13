@@ -81,12 +81,13 @@ i{
    display: flex;
    flex-direction: row;
 }
-a .menu__elem {
+.menu__elem {
    cursor: pointer;
    color: #fff;
-   text-decoration: none;
+   text-transform: uppercase;
 }
 a{
+   color: darkred;
    text-decoration: none;
 }
 body{
@@ -328,4 +329,66 @@ margin-bottom: 10px;
 .sidebar {
    position: absolute;
    width: 20%;
+}
+#loadmore {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 30px;
+}
+.button {
+   background-color: #fff;
+   width: 150px;
+   height: 30px;
+   padding-top: 5px;
+   font-size: 20px;
+   border: 1px solid darkred;
+   border-radius: 5px;
+}
+.likes {
+   display: flex;
+}
+
+.likes__item {
+   list-style: none;
+}
+
+.likes__item:not(:last-child) {
+   margin-right: 20px;
+}
+
+.likes__item a {
+   padding: 10px 15px;
+   display: inline-block;
+   border-bottom: 2px solid;
+   border-radius: 3px;
+   box-shadow: none;
+   background: #f5f5f5;
+   font-size: 14px;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   line-height: 100%;
+}
+
+.likes__item a:hover {
+   color: #fff;
+}
+
+.likes__item--like a {
+   border-bottom-color: #47ba72;
+   color: #47ba72;
+}
+
+.likes__item--dislike a {
+   border-bottom-color: #ba6547;
+   color: #ba6547;
+}
+
+.likes__item--like a:hover {
+   background: #47ba72;
+}
+
+.likes__item--dislike a:hover {
+   background: #ba6547;
 }

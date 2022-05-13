@@ -12,9 +12,7 @@
 <header>
 <div class="container">
    <a href="<?php echo site_url();?>"><h1>News of Our Company <br> <i class="fa-solid fa-newspaper"></i></h1></a>
-    <ul class="menu">
-      <a href="<?php echo site_url('/old-events'); ?>"><li class="menu__elem">Old Events</li></a>
-    </ul>
+   <br><a class="menu__elem" href="<?php echo site_url('/test-shortcode');?>">test shorcode</a>
 </div> 
 </header>
    

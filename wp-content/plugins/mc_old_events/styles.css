@@ -1,0 +1,24 @@
+.read__more {
+   color: gray;
+}
+.archive__elem a {
+   border-bottom: 1px solid darkred;
+   color: darkred;
+   text-transform: uppercase;
+   font-size: 20px;
+}
+
+.archive__elem {
+   margin-bottom: 10px;
+}
+
+.archive__list {
+   list-style: none;
+}
+h1 {
+   color: darkred;
+   
+}
+.hidden {
+   display: none;
+}
