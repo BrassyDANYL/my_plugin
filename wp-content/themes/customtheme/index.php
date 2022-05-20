@@ -9,7 +9,7 @@
    //   echo paginate_links(array(
    //      'total' => $oldEvents -> max_num_pages
    //   ));
-      echo get_mycalendar(); 
+
 
       ?>
 
