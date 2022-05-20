@@ -33,6 +33,8 @@ echo $count . '';
 
 //likes
 
+
+
 //---- Add buttons to top of post content
 	function ip_post_likes($content) {
 		// Check if single post

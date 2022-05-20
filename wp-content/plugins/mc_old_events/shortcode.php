@@ -28,7 +28,7 @@ function shortcodeOldEvents($atts) {
          </div>
          <img src="" alt="">
          <div class="content__part"></div>
-         <div class="date"><?php echo get_post_meta($post -> ID, 'Date', true); ?></div>
+         <div class="date"><?php echo get_post_meta('$post -> ID', 'Date', true); ?></div>
    </div>
          <?php
       }
