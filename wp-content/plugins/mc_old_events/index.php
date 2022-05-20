@@ -5,7 +5,8 @@ Description: This plugin adds functionality to add custom post type Old Events
 Version: 1.0
 Author: Brassy
 */
-
+error_reporting(E_ALL);
+    ini_set("display_errors", 1);
 //Our Scripts
 add_action('wp_enqueue_scripts', 'files');
 
