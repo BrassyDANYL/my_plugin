@@ -40,12 +40,14 @@ function our_custom_taxonomy() {
       'public' => true,
       'rewrite' => true,
       'show_ui' => true,
-      'capabilities'=> array(
-         'manage_terms' => 'manage_categories',
-         'edit_terms' => 'manage_categories',
-         'delete_terms' => 'manage_categories',
-         'assign_terms' => 'edit_posts'
-      )
+      'hierarchical' => true,
+      'capabilities'      => array(
+            'assign_terms' => 'manage_options',
+            'edit_terms'   => 'god',
+            'manage_terms' => 'god',
+        ),
+        'show_in_nav_menus' => false
+      
 
    ));
 }
