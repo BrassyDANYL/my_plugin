@@ -1,25 +1,23 @@
 <?php
-class OE_CLI {
-   public function hello_world(){
-      WP_CLI::line( 'Hello User!' );
-   }
-   public function delete($attr) {
-      wp_trash_post($post_id);
-   }
-}
-function wds_cli_register_commands() {
-   WP_CLI::add_command( 'old_event', 'OE_CLI');
 
-   
-   
-}
-add_action( 'cli_init', 'wds_cli_register_commands' );
+class deleteCommand{
+    public function delete($args, $assoc_args) {
+    $importance = $assoc_args['importance'];
+    $importance_terms = get_terms([
+    'taxonomy' => 'importance',
+    'hide_empty' => false
+    ]);
+    global $newimportance;
+    $query = new WP_Query( array(
+         'post-type' => 'old_event',
+         'importance' => $assoc_args
+    ));
 
-
-// fuction delete(){
-
-// }
-function add_delete() {
-   WP_CLI::add_command('delete', 'wp_delete_post');
-}
-?>
+        }
+        }
+    
+        if (class_exists('WP_CLI')){
+        WP_CLI::add_command( 'old_events', 'deleteCommand');
+        WP_CLI::success( 'Post(s) deleted');
+    
+        }
