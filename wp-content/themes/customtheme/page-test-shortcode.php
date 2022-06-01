@@ -2,7 +2,9 @@
 
 
    <div class="container">
-    <?php echo do_shortcode('[addOldEvents importance="1" numberposts="-1"]');?>
+   <?php
+      the_content();
+   ?>
 
    </div>
       
